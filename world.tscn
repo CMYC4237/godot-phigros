@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://37gpyub1duo3"]
+
+[ext_resource type="Script" uid="uid://hhfycsysrlj5" path="res://world.gd" id="1_tlwt5"]
+[ext_resource type="Material" uid="uid://bbal7jrquqit3" path="res://addons/blur_godot4-main/BlurYMaterial.tres" id="2_blur_y"]
+[ext_resource type="Material" uid="uid://cv2mrmyhkpw46" path="res://addons/blur_godot4-main/BlurXMaterial.tres" id="3_blur_x"]
+
+[node name="world" type="Node2D" unique_id=1098674221]
+script = ExtResource("1_tlwt5")
+
+[node name="bg_layer" type="CanvasLayer" parent="." unique_id=1311387140]
+layer = -1
+
+[node name="BlurY" type="SubViewportContainer" parent="bg_layer" unique_id=439109943]
+material = ExtResource("2_blur_y")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="bg_layer/BlurY" unique_id=448008393]
+handle_input_locally = false
+size = Vector2i(960, 540)
+render_target_update_mode = 4
+
+[node name="BlurX" type="SubViewportContainer" parent="bg_layer/BlurY/SubViewport" unique_id=225410574]
+material = ExtResource("3_blur_x")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="bg_layer/BlurY/SubViewport/BlurX" unique_id=345766849]
+handle_input_locally = false
+size = Vector2i(960, 540)
+render_target_update_mode = 4
+
+[node name="background" type="Sprite2D" parent="bg_layer/BlurY/SubViewport/BlurX/SubViewport" unique_id=1020025666]
+position = Vector2(480, 270)
+
+[node name="music_player" type="AudioStreamPlayer" parent="." unique_id=1935918968]
+
+[node name="effects_container" type="Node2D" parent="." unique_id=1947834561]
+
+[node name="lines_container" type="Node2D" parent="." unique_id=1893712551]

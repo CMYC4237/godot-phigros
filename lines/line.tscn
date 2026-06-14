@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cstpoax53ourw"]
+
+[ext_resource type="Script" uid="uid://y225rqog80xt" path="res://lines/line.gd" id="1_ryt8k"]
+
+[node name="line" type="Node2D" unique_id=449874763]
+z_index = 2
+script = ExtResource("1_ryt8k")
+
+[node name="shape" type="ColorRect" parent="." unique_id=154848171]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 0.9254902, 0.62352943, 1)
+
+[node name="notes_container" type="Node2D" parent="." unique_id=1076608978]

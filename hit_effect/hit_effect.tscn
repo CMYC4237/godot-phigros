@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ckh7ewy7t63ny"]
+
+[ext_resource type="Script" uid="uid://cc2x7vveqq6qo" path="res://hit_effect/hit_effect.gd" id="1_nvtpv"]
+
+[node name="hit_effect" type="Node2D" unique_id=1716928609]
+script = ExtResource("1_nvtpv")
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=1626156796]
+scale = Vector2(0.65, 0.65)
+
+[node name="particles" type="Node2D" parent="." unique_id=580297225]

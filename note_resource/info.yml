@@ -1,0 +1,7 @@
+name: "Phigros 官方资源包"
+author: Pigeon Games vs. My_Eric
+description: 图片、音效资源来自Phigros，由My_Eric进行整合
+hitFx: [5, 6]
+holdAtlas: [50, 50]
+holdAtlasMH: [50, 95]
+hitFxScale: 1.02

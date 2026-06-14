@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://12es0vd58yuj"]
+
+[ext_resource type="Script" uid="uid://b7i41qjdvecit" path="res://import_screen/import_screen.gd" id="1_5wkl8"]
+
+[node name="import_screen" type="CanvasLayer" unique_id=1463457421]
+offset = Vector2(330, 50)
+transform = Transform2D(1, 0, 0, 1, 330, 50)
+script = ExtResource("1_5wkl8")
+
+[node name="zip_file" type="Button" parent="." unique_id=365938938]
+offset_right = 300.0
+offset_bottom = 31.0
+text = "一次性导入压缩包"
+
+[node name="level_file" type="Button" parent="." unique_id=1266886783]
+offset_top = 40.0
+offset_right = 300.0
+offset_bottom = 71.0
+text = "选择谱面json"
+
+[node name="pict_file" type="Button" parent="." unique_id=1409001630]
+offset_top = 80.0
+offset_right = 300.0
+offset_bottom = 111.0
+text = "选择曲绘文件"
+
+[node name="music_file" type="Button" parent="." unique_id=916941116]
+offset_top = 120.0
+offset_right = 300.0
+offset_bottom = 151.0
+text = "选择音乐"
+
+[node name="play" type="Button" parent="." unique_id=76628061]
+offset_top = 160.0
+offset_right = 300.0
+offset_bottom = 191.0
+text = "播放"
+
+[node name="render" type="Button" parent="." unique_id=1925323206]
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 231.0
+text = "渲染"

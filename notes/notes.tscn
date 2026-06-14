@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cl0j0r07b8ryg"]
+
+[ext_resource type="Script" uid="uid://0j8y8rsawrtu" path="res://notes/notes.gd" id="1_xkw4e"]
+
+[node name="notes" type="Node2D" unique_id=2092443353]
+script = ExtResource("1_xkw4e")
+
+[node name="normal_note" type="Sprite2D" parent="." unique_id=427914646]
+z_index = 4

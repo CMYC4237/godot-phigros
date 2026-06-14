@@ -1,0 +1,23 @@
+# Godot 4
+.godot/
+*.import
+
+# User data
+user://
+
+# Build output
+export/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp / cache
+*.tmp
+*.log

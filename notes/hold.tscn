@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bkay07olwmr62"]
+
+[ext_resource type="Script" uid="uid://ce2ugpmmti225" path="res://notes/hold.gd" id="1_ixdpw"]
+
+[node name="hold" type="Node2D" unique_id=1883987231]
+z_index = 3
+script = ExtResource("1_ixdpw")
+
+[node name="start" type="Sprite2D" parent="." unique_id=1319836310]
+
+[node name="body" type="Sprite2D" parent="." unique_id=978905759]
+
+[node name="end" type="Sprite2D" parent="." unique_id=896539862]
